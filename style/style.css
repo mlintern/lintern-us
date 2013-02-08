@@ -99,3 +99,18 @@ z-index: 998;
 .footer{
 height: 150px;
 }
+/**/
+.rotateL20
+{
+transform:rotate(20deg);
+-ms-transform:rotate(20deg); /* IE 9 */
+-moz-transform:rotate(20deg); /* Firefox */
+-webkit-transform:rotate(20deg); /* Safari and Chrome */
+}
+.rotateR20
+{
+transform:rotate(-20deg);
+-ms-transform:rotate(-20deg); /* IE 9 */
+-moz-transform:rotate(-20deg); /* Firefox */
+-webkit-transform:rotate(-20deg); /* Safari and Chrome */
+}

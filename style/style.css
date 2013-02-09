@@ -87,14 +87,6 @@ z-index: 10;
 width: 100%; height: 100%;
 z-index: 998;
 }
-#blackmask {
-display: none;
-background: #000; 
-position: fixed; left: 0; top: 0; 
-z-index: 10;
-width: 100%; height: 100%;
-z-index: 998;
-}
 /*FOOTER*/
 .footer{
 height: 150px;
@@ -106,18 +98,34 @@ width:300px;
 height:358px;
 float:left;
 }
-.inner{
+.little-polaroid .inner{
 width: 280px;
 height: 252px;
 overflow: hidden;
 padding: 17px 10px;
+}
+.big-polaroid{
+background-image: url('../images/Polaroid_500.png');
+width:500px;
+height:550px;
+position: fixed;
+top: 50%; left: 50%;
+z-index: 999;
+box-shadow: 0px 0px 20px #999; /* CSS3 */
+}
+.big-polaroid .inner{
+width: 468px;
+height: 450px;
+overflow: hidden;
+padding: 17px 16px;
 }
 .small{
 width: 280px;
 height: 280px;
 }
 .large{
-
+width: 468px;
+height: 468px;
 }
 /*ROTATION*/
 .rotateL10

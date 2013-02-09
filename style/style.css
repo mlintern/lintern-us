@@ -99,7 +99,41 @@ z-index: 998;
 .footer{
 height: 150px;
 }
-/**/
+/*IMAGE SIZES*/
+.little-polaroid{
+background-image: url('../images/Polaroid_300.png');
+width:300px;
+height:358px;
+float:left;
+}
+.inner{
+width: 280px;
+height: 252px;
+overflow: hidden;
+padding: 17px 10px;
+}
+.small{
+width: 280px;
+height: 280px;
+}
+.large{
+
+}
+/*ROTATION*/
+.rotateL10
+{
+transform:rotate(10deg);
+-ms-transform:rotate(10deg); /* IE 9 */
+-moz-transform:rotate(10deg); /* Firefox */
+-webkit-transform:rotate(10deg); /* Safari and Chrome */
+}
+.rotateR10
+{
+transform:rotate(-10deg);
+-ms-transform:rotate(-10deg); /* IE 9 */
+-moz-transform:rotate(-10deg); /* Firefox */
+-webkit-transform:rotate(-10deg); /* Safari and Chrome */
+}
 .rotateL20
 {
 transform:rotate(20deg);

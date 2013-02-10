@@ -23,22 +23,12 @@ $(document).ready(function() {
 							.attr('class','large')
 							.attr('src', ImageSource )
 				));
-			
-		// Add the mask to body
+
 		$('body').append(PolaroidDiv);
-
-		return false;
 	});
 
-	// When clicking on the button close or the mask layer the popup closed
-	//$('#mask').live('click', function() { 
 	$('.big-polaroid').live("click touchstart", function(){
-		$('.big-polaroid').fadeOut(300 , function() {
-			//$('.big-polaroid').remove(); 
-			  this.remove();
-		});
-		return false;
+		this.remove();
 	});
-
 	
 });

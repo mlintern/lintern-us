@@ -34,7 +34,8 @@ $(document).ready(function() {
 	//$('#mask').live('click', function() { 
 	$('.big-polaroid').live("click touchstart", function(){
 		$('.big-polaroid').fadeOut(300 , function() {
-			$('.big-polaroid').remove();  
+			//$('.big-polaroid').remove(); 
+			  this.remove();
 		});
 		return false;
 	});

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.little-polaroid').click(function() {
-		console.log('little-polaroid click')
+		console.log($(this).attr("id"));
 		
 		//Getting the variable's value from a link 
 		var ImageSource = $(this).find("img").attr('src');

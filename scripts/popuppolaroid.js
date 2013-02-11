@@ -2,7 +2,6 @@ $(document).ready(function() {
 	$('.little-polaroid').click(function() {
 		
 		currentID = $(this).attr("id");
-		//console.log(currentID);
 		$(this).css({'visibility' : 'hidden'});
 		
 		//Getting the variable's value from a link 

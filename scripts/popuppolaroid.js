@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	$('.little-polaroid').click(function() {
-		console.log($(this).attr("id"));
+		
+		currentID = $(this).attr("id");
+		//console.log(currentID);
+		$(this).css({'visibility' : 'hidden'});
 		
 		//Getting the variable's value from a link 
 		var ImageSource = $(this).find("img").attr('src');
@@ -11,10 +14,14 @@ $(document).ready(function() {
 
 		var PolaroidDiv = $('<div>')
 					.attr('class','big-polaroid')
+					.attr('id',currentID)
 					.css({ 
 						'margin-top' : -popMargTop,
 						'margin-left' : -popMargLeft
 					})
+					.append(
+					$('<div>')
+						.attr('class','exit'))
 					.append(
 					$('<div>')
 						.attr('class','inner')
@@ -27,8 +34,10 @@ $(document).ready(function() {
 		$('body').append(PolaroidDiv);
 	});
 
-	$('.big-polaroid').live("click touchstart", function(){
-		this.remove();
+	$('.exit').live("click touchstart", function(){
+	currentID = $(this).parent().attr("id");
+	$("#"+currentID).css({'visibility':'visible'});
+	$(this).parent().remove();
 	});
 	
 });

@@ -120,8 +120,8 @@ background-image: url('../images/exit.png');
 width: 50px;
 height: 50px;
 position: absolute;
-top: 0;
-right: 0;
+top: 5px;
+right: 5px;
 }
 .big-polaroid .inner{
 width: 468px;

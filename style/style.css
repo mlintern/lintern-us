@@ -44,6 +44,11 @@ color: blue;
 text-align: center;
 font-weight: bold;
 }
+.email{
+position: absolute;
+right: 10px;
+top: 10px;
+}
 /*CONTENT*/
 .sub-content{
 width: 600px;

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.little-polaroid').click(function() {
+	$('.little-polaroid').live("click", function() {
 		
 		currentID = $(this).attr("id");
 		$(this).css({'visibility' : 'hidden'});

@@ -56,26 +56,7 @@ margin: 0 33px;
 padding: 15px;
 }
 /* POP UP FORM */
-#popupform {
-display:none;
-background: Red;
-padding: 5px; 	
-border: 2px solid #000000;
-float: left;
-font-size: 1.2em;
-position: fixed;
-top: 50%; left: 50%;
-z-index: 999;
-box-shadow: 0px 0px 20px #999; /* CSS3 */
-border-radius:3px 3px 3px 3px;
-text-align: center;
-}
-#popupform .widget.html { 
-background: #ffffff;
-margin: 0px;
-padding: 0px;
-border-radius: 0;
-}
+
 #mask {
 display: none;
 background: #ffffff; 
@@ -96,6 +77,14 @@ z-index: 998;
 /*FOOTER*/
 .footer{
 height: 150px;
+position:relative;
+}
+.footer-email{
+color:blue;
+text-align:center;
+position:absolute;
+bottom:50%;
+left: 50%;
 }
 /*IMAGE SIZES*/
 .little-polaroid{

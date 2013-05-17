@@ -49,6 +49,27 @@ position: absolute;
 right: 10px;
 top: 10px;
 }
+.social{
+position: absolute;
+left: 10px;
+top: 10px;
+}
+.social a{
+background: url('http://dev.nretnil.com/img/sprites/social-sprite-5.png') 0 0 no-repeat transparent;
+height: 63px;
+width: 68px;
+display: block;
+float:left;
+}
+#twitter{
+background-position: -136px 0;
+}
+#facebook{
+background-position: -3px -69px;
+}
+#instagram{
+background-position: -75px 0;
+}
 /*CONTENT*/
 .sub-content{
 width: 600px;

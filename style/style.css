@@ -187,7 +187,7 @@ transform:rotate(-20deg);
 /*THUMBTACKS*/
 .left-tack{
 background-image: url('../images/thumbtack_left_sprite.png');
-background-repeat: none;
+background-repeat: no-repeat;
 position: absolute;
 left: 15%;
 width: 90px;
@@ -214,7 +214,7 @@ background-position: -410px 0;
 }
 .right-tack{
 background-image: url('../images/thumbtack_right_sprite.png');
-background-repeat: none;
+background-repeat: no-repeat;
 position: absolute;
 left: 55%;
 width: 90px;

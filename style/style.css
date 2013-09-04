@@ -34,12 +34,15 @@ line-height: 2;
 }
 /*BACKGROUND IMAGES*/
 body{
-background-image: url('../images/Corkboard.png');
-background-position: 0% 0%;
+padding-top: 100px;
+background: url('../images/Corkboard.png') 0 0 transparent repeat;
+}
+.container{
+width: 960px;
 }
 /*HEADER*/
 .header-text{
-font-size: 130px;
+font-size: 70px;
 color: blue;
 text-align: center;
 font-weight: bold;
@@ -109,15 +112,16 @@ left: 50%;
 }
 /*IMAGE SIZES*/
 .little-polaroid{
-background-image: url('../images/Polaroid_300.png');
+background: url('../images/Polaroid_300.png') 0 0 no-repeat transparent;
 width:300px;
 height:358px;
 float:left;
 margin-left: 10px;
+position: relative;
 }
 .little-polaroid .inner{
-width: 280px;
-height: 252px;
+width: 290px;
+height: 285px;
 overflow: hidden;
 padding: 17px 10px;
 }
@@ -139,8 +143,8 @@ top: 5px;
 right: 5px;
 }
 .big-polaroid .inner{
-width: 468px;
-height: 418px;
+width: 484px;
+height: 476px;
 overflow: hidden;
 padding: 29px 16px;
 }
@@ -152,37 +156,50 @@ height: 280px;
 width: 468px;
 height: 468px;
 }
-#pic4, #pic5, #pic9, #pic10{
-margin-left: 110px;
+@media screen and (max-width: 768px) {
+	.little-polaroid{
+	margin-bottom: 20px;
+	}
 }
-/*ROTATION*/
-.rotateL10
-{
-transform:rotate(10deg);
--ms-transform:rotate(10deg); /* IE 9 */
--moz-transform:rotate(10deg); /* Firefox */
--webkit-transform:rotate(10deg); /* Safari and Chrome */
-}
-.rotateR10
-{
-transform:rotate(-10deg);
--ms-transform:rotate(-10deg); /* IE 9 */
--moz-transform:rotate(-10deg); /* Firefox */
--webkit-transform:rotate(-10deg); /* Safari and Chrome */
-}
-.rotateL20
-{
-transform:rotate(20deg);
--ms-transform:rotate(20deg); /* IE 9 */
--moz-transform:rotate(20deg); /* Firefox */
--webkit-transform:rotate(20deg); /* Safari and Chrome */
-}
-.rotateR20
-{
-transform:rotate(-20deg);
--ms-transform:rotate(-20deg); /* IE 9 */
--moz-transform:rotate(-20deg); /* Firefox */
--webkit-transform:rotate(-20deg); /* Safari and Chrome */
+@media screen and (min-width: 768px ){
+	body{
+	padding-top: 0;
+	}
+	.header-text{
+	font-size: 130px;
+	}
+	#pic4, #pic5, #pic9, #pic10{
+	margin-left: 110px;
+	}
+	/*ROTATION*/
+	.rotateL10
+	{
+	transform:rotate(10deg);
+	-ms-transform:rotate(10deg); /* IE 9 */
+	-moz-transform:rotate(10deg); /* Firefox */
+	-webkit-transform:rotate(10deg); /* Safari and Chrome */
+	}
+	.rotateR10
+	{
+	transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg); /* IE 9 */
+	-moz-transform:rotate(-10deg); /* Firefox */
+	-webkit-transform:rotate(-10deg); /* Safari and Chrome */
+	}
+	.rotateL20
+	{
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); /* IE 9 */
+	-moz-transform:rotate(20deg); /* Firefox */
+	-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	}
+	.rotateR20
+	{
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); /* IE 9 */
+	-moz-transform:rotate(-20deg); /* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari and Chrome */
+	}
 }
 /*THUMBTACKS*/
 .left-tack{
@@ -238,4 +255,7 @@ background-position: -330px 0;
 }
 .right-white-tack{
 background-position: -410px 0;
+}
+img{
+max-width: none;
 }

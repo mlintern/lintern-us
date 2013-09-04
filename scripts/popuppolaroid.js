@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	$('.little-polaroid').live("click", function() {
 		
+		width = document.body.offsetWidth;
+		
+		if ( width > 630 ){
+		
 		currentID = $(this).attr("id");
 		$(this).css({'visibility' : 'hidden'});
 		
@@ -31,6 +35,7 @@ $(document).ready(function() {
 				));
 
 		$('body').append(PolaroidDiv);
+		}
 	});
 
 	$('.exit').live("click touchstart", function(){

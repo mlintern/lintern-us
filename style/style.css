@@ -48,14 +48,16 @@ text-align: center;
 font-weight: bold;
 }
 .email{
-position: absolute;
+position: fixed;
 right: 10px;
 top: 10px;
+z-index: 5;
 }
 .social{
-position: absolute;
+position: fixed;
 left: 10px;
 top: 10px;
+z-index: 5;
 }
 .social a{
 background: url('http://dev.nretnil.com/img/sprites/social-sprite-5.png') 0 0 no-repeat transparent;

@@ -51,7 +51,7 @@
 				$imgDirs = array("R","L");
 				$tackDirs = array("right","left");
 				$colors = array("green","red","black","yellow","blue","white");
-				echo "<div id='pic" . $count . "' class='little-polaroid rotate" . $imgDirs[array_rand($imgDirs)] . "10'><div class='" . $tackDirs[array_rand($tackDirs)] . "-tack right-" . $colors[array_rand($colors)] . "-tack'></div><div class='inner'><img class='small' src='" . $src . "'/></div></div>";
+				echo "<div id='pic" . $count . "' class='little-polaroid rotate" . $imgDirs[array_rand($imgDirs)] . "10'><div class='" . $tackDirs[array_rand($tackDirs)] . "-tack right-" . $colors[array_rand($colors)] . "-tack'></div><div class='inner'><img class='small' src='" . $src . "?v=1.0.0'/></div></div>";
 				$count++;
 			endforeach;
 			?>

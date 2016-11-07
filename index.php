@@ -23,6 +23,7 @@
 
 	<link type="text/css" href="https://dev.nretnil.com/staging/tools/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="https://dev.nretnil.com/staging/bluevioletmuleinfluenceplayground/beigedormousemultiplyteeth/font-awesome-4/css/font-awesome.css" rel="stylesheet">
+	<link type="text/css" href="style/fonts.css?v=1.0.0" rel="stylesheet">
 	<link type="text/css" href="style/style.css?v=1.0.0" rel="stylesheet">
 </head>
 

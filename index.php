@@ -8,7 +8,7 @@
 	$gifs = glob( $path . "/images/photos/*.gif");
 
 	$images = array_merge( $jpgs,$pngs,$gifs);
-	sort($images);
+	shuffle($images);
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
 	<div class="container-fluid">
 		<div class="header">
 			<div class="apple header-text">Linterns</div>
-		</div> 
+		</div>
 		<div class="row picture-container">
 			<?php
 			$count = 0;
